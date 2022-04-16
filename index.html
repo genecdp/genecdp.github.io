@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh_TW-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#795548">
+    <title>GeneC's Page</title>
+
+    <!-- CSS Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Noto+Serif+TC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="earlyIntro">
+            這裡是 <span class="branding">Gene Content Distribution Project</span>。<br> 網站正在建立中 ⋯⋯
+        </div>
+    </div>
+</body>
+<style>
+    body {
+        margin: 0px;
+        padding: 20px;
+    }
+    
+    .main {
+        text-align: center;
+    }
+    
+    .earlyIntro {
+        font-family: 'Noto Serif TC', serif;
+        transform: translateY(20%);
+        opacity: 0;
+        font-size: large;
+        text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+        color: rgb(75, 75, 75);
+    }
+    
+    .earlyIntro.display {
+        transition: 0.5s;
+        transition-timing-function: cubic-bezier(.14, .35, 0, 1);
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    .branding {
+        font-family: 'Noto Sans Mono', monospace;
+    }
+</style>
+
+<script>
+    const earlyIntroText = document.querySelector(".earlyIntro")
+    window.addEventListener("load", function(event) {
+        earlyIntroText.classList.add("display");
+    });
+</script>
+
+</html>
