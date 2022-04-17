@@ -15,36 +15,50 @@
 </head>
 
 <body>
+    <div class="header"><span class="branding">Gene's Content Distribution Project</span></div>
     <div class="main">
         <div class="earlyIntro">
-            這裡是 <span class="branding">Gene Content Distribution Project</span>。<br> 網站正在建立中 ⋯⋯
+            <p>網站正在建立中 ⋯⋯</p>
         </div>
     </div>
 </body>
 <style>
     body {
         margin: 0px;
-        padding: 20px;
+        padding: 0px;
+    }
+    
+    .header {
+        color: rgb(84, 55, 0);
+        background-color: orange;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        padding: 15px 0px;
+        box-shadow: 0px 0px 3px 2px rgba(196, 127, 0, 0.556);
+        z-index: 1000;
     }
     
     .main {
-        text-align: center;
+        margin-top: 65px;
+        display: flex;
+        justify-content: center;
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    
+    .main.display {
+        transition: 0.4s;
+        transition-timing-function: cubic-bezier(.14, .35, 0, 1);
+        transform: translateY(0);
+        opacity: 1;
     }
     
     .earlyIntro {
         font-family: 'Noto Serif TC', serif;
-        transform: translateY(20%);
-        opacity: 0;
-        font-size: large;
-        text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
-        color: rgb(75, 75, 75);
-    }
-    
-    .earlyIntro.display {
-        transition: 0.5s;
-        transition-timing-function: cubic-bezier(.14, .35, 0, 1);
-        transform: translateY(0);
-        opacity: 1;
+        text-shadow: 0px 0px 2px rgba(0, 0, 0, 0);
+        color: rgb(42, 42, 42);
     }
     
     .branding {
@@ -53,7 +67,7 @@
 </style>
 
 <script>
-    const earlyIntroText = document.querySelector(".earlyIntro")
+    const earlyIntroText = document.querySelector(".main")
     window.addEventListener("load", function(event) {
         earlyIntroText.classList.add("display");
     });
