@@ -19,19 +19,13 @@
     <div class="main">
         <div class="earlyIntro">
             <h1>網站正在建立中 ⋯⋯</h1>
-            <p> 看來你發現了這個神奇的地方，這個網站未來將充斥著我這資工人類平時不務正業的產出物，例如：
-                <ul>
-                    <li>攝影作品</li>
-                    <li>不小心剪出來的影片</li>
-                    <li>電子產品、資訊技術、旅行紀錄文章</li>
-                </ul>
-                一切尚在籌備當中，感謝提前發現這裡的每個人！</p>
+            <p> 看來你發現了這個神奇的地方！<br>這個網站未來將充斥著我這資工人類平時不務正業的產出物，例如：<br> 攝影作品、不小心剪出來的影片、電子產品文章、資訊技術文章、旅行紀錄文章。 <br>一切還在籌備當中，感謝提前發現這裡的每個人！
+            </p>
+
+        </div>
+        <div class="socialAccounts">
             <h1>社群帳號</h1>
-            <p>
-                <ul>
-                    <li><a href="https://www.youtube.com/channel/UC1BPf9TI4Fd32-lbEyOeQNw" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-                    <li><a href="https://www.instagram.com/genec.dev/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                </ul>
+            <p><a href="https://www.youtube.com/channel/UC1BPf9TI4Fd32-lbEyOeQNw" target="_blank" rel="noopener noreferrer">YouTube (GMPP)</a>、<a href="https://www.instagram.com/genec.dev/" target="_blank" rel="noopener noreferrer">Instagram (@genec.dev)</a></ul>
             </p>
         </div>
         <div class="privacy">
@@ -58,11 +52,12 @@
     }
     
     h1 {
-        margin-bottom: 0px;
+        font-size: 1.5rem;
+        margin: 0px;
     }
     
     p {
-        margin-top: 0px;
+        margin: 0px;
     }
     
     .header {
@@ -79,10 +74,9 @@
     
     .main {
         max-width: 767px;
-        margin-top: 30px;
+        margin-top: 40px;
         padding: 20px;
         display: flex;
-        justify-content: center;
         flex-direction: column;
         transform: translateY(2%);
         opacity: 0;
@@ -96,6 +90,14 @@
         transition-timing-function: cubic-bezier(.14, .35, 0, 1);
         transform: translateY(0);
         opacity: 1;
+    }
+    
+    .main div {
+        border-radius: 30px;
+        background-color: #ffefc6;
+        color: #543d00;
+        margin: 5px;
+        padding: 25px;
     }
     
     .branding {
