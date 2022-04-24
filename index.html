@@ -5,21 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#f9a825">
+    <meta name="theme-color" content="#ffeac6">
     <title>首頁｜GeneC's Page</title>
 
     <!-- CSS Import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
     <div class="header"><span class="branding">Gene's Content Distribution Project</span></div>
+    <nav class="nav--mobile">
+        <a href="#" class="nav__link"><span class="material-icons">home</span><span class="nav__text">首頁</span></a>
+        <a href="#" class="nav__link"><span class="material-icons">sort</span><span class="nav__text">分類</span></a>
+        <a href="#" class="nav__link"><span class="material-icons">notifications</span><span class="nav__text">通知</span></a>
+        <a href="#" class="nav__link"><span class="material-icons">info</span><span class="nav__text">關於</span></a>
+    </nav>
     <div class="main">
         <div class="earlyIntro">
             <h1>網站正在建立中 ⋯⋯</h1>
-            <p> 看來你發現了這個神奇的地方！這個網站未來將充斥著我這資工人類平時不務正業的產出物，例如：<br> 攝影作品、不小心剪出來的影片、電子產品文章、資訊技術文章、旅行紀錄文章。 <br>一切還在籌備當中，感謝提前發現這裡的每個人！
+            <p> 看來你發現了這個神奇的地方！這個網站未來將充斥著我這資工人類平時不務正業的產出物，例如：<br> 攝影作品、不小心剪出來的影片、電子產品文章、資訊技術文章、旅行紀錄文章。
+                <br>一切還在籌備當中，感謝提前發現這裡的每個人！
             </p>
 
         </div>
@@ -46,6 +54,7 @@
     body {
         margin: 0px;
         margin-top: calc(var(--header-height));
+        margin-bottom: 80px;
         padding: 0px;
         display: flex;
         justify-content: center;
@@ -55,10 +64,7 @@
     a {
         text-decoration: none;
         color: inherit;
-    }
-    
-    a:hover {
-        color: #afafaf;
+        -webkit-tap-highlight-color: transparent;
     }
     
     h1 {
@@ -72,7 +78,7 @@
     
     .header {
         color: rgb(84, 55, 0);
-        background-color: #f9a825;
+        background-color: #ffeac6;
         text-align: center;
         position: fixed;
         top: 0;
@@ -85,6 +91,58 @@
         /* box-shadow: 0px 0px 10px 2px rgba(155, 101, 0, 0.23); */
         /* border-radius: 30px; */
         z-index: 10;
+    }
+    
+    .nav--mobile {
+        position: fixed;
+        bottom: 0;
+        height: 80px;
+        width: 100vw;
+        background-color: #ffeac6;
+        display: flex;
+        /* justify-content: space-evenly; */
+        overflow-x: auto;
+        color: rgb(105, 68, 0);
+        z-index: 10;
+    }
+    
+    .nav__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        font-size: 12px;
+        transition: 0.2s;
+        transition-timing-function: cubic-bezier(.14, .35, 0, 1);
+    }
+    
+    .nav__link:active {
+        transition: 0.2s;
+        transform: scale(.8);
+    }
+    
+    .material-icons {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        /* Preferred icon size */
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+        /* Support for all WebKit browsers. */
+        -webkit-font-smoothing: antialiased;
+        /* Support for Safari and Chrome. */
+        text-rendering: optimizeLegibility;
+        /* Support for Firefox. */
+        -moz-osx-font-smoothing: grayscale;
+        /* Support for IE. */
+        font-feature-settings: 'liga';
     }
     
     .main {
@@ -122,6 +180,13 @@
     window.addEventListener("load", function(event) {
         earlyIntroText.classList.add("display");
     });
+
+    const navButtons = document.querySelectorAll(".nav__link");
+    navButtons.forEach((e) => {
+        e.addEventListener("click", () => {
+            alert("底部 Navbar 還正在準備當中。")
+        })
+    })
 </script>
 
 </html>
