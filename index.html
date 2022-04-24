@@ -19,7 +19,7 @@
     <div class="main">
         <div class="earlyIntro">
             <h1>網站正在建立中 ⋯⋯</h1>
-            <p> 看來你發現了這個神奇的地方！<br>這個網站未來將充斥著我這資工人類平時不務正業的產出物，例如：<br> 攝影作品、不小心剪出來的影片、電子產品文章、資訊技術文章、旅行紀錄文章。 <br>一切還在籌備當中，感謝提前發現這裡的每個人！
+            <p> 看來你發現了這個神奇的地方！這個網站未來將充斥著我這資工人類平時不務正業的產出物，例如：<br> 攝影作品、不小心剪出來的影片、電子產品文章、資訊技術文章、旅行紀錄文章。 <br>一切還在籌備當中，感謝提前發現這裡的每個人！
             </p>
 
         </div>
@@ -35,15 +35,24 @@
     </div>
 </body>
 <style>
+     :root {
+        --header-height: 50px;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
     body {
         margin: 0px;
+        margin-top: calc(var(--header-height) + 5px);
         padding: 0px;
         display: flex;
         justify-content: center;
     }
     
     a {
-        /* text-decoration: none; */
+        text-decoration: none;
         color: inherit;
     }
     
@@ -62,27 +71,29 @@
     
     .header {
         color: rgb(84, 55, 0);
-        background-color: #f9a825;
+        background-color: #ffcf81;
+        border-radius: 30px;
+        margin: 10px;
         text-align: center;
-        position: absolute;
+        position: fixed;
         top: 0;
-        width: 100vw;
-        padding: 15px 0px;
-        box-shadow: 0px 0px 3px 2px rgba(196, 127, 0, 0.556);
-        z-index: 1000;
+        width: 95vw;
+        height: var(--header-height);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 0px 0px 10px 2px rgba(155, 101, 0, 0.23);
+        z-index: 10;
     }
     
     .main {
         max-width: 767px;
-        margin-top: 40px;
-        padding: 20px;
+        padding: 10px;
         display: flex;
         flex-direction: column;
-        transform: translateY(2%);
+        transform: translateY(1.5%);
         opacity: 0;
-        font-family: 'Noto Serif TC', serif;
-        text-shadow: 0px 0px 2px rgba(0, 0, 0, 0);
-        color: rgb(42, 42, 42);
+        font-family: 'Noto Sans TC', sans-serif;
     }
     
     .main.display {
@@ -94,8 +105,8 @@
     
     .main div {
         border-radius: 30px;
-        background-color: #ffefc6;
-        color: #543d00;
+        background-color: #fdf5e7;
+        color: rgb(105, 68, 0);
         margin: 5px;
         padding: 25px;
     }
