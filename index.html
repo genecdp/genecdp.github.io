@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#ffeac6">
-    <title>首頁｜GeneC's Page</title>
+    <meta name="theme-color" content="#ffe29a">
+    <title>首頁｜GeneC's Blog</title>
 
     <!-- CSS Import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,35 +16,34 @@
 </head>
 
 <body>
-    <div class="header"><span class="branding">Gene's Content Distribution Project</span></div>
+    <div class="header"><span class="branding">GeneC's Blog</span></div>
     <nav class="nav--mobile">
         <a href="#" class="nav__link"><span class="material-icons">home</span><span class="nav__text">首頁</span></a>
-        <a href="#" class="nav__link"><span class="material-icons">sort</span><span class="nav__text">分類</span></a>
+        <a href="#" class="nav__link"><span class="material-icons">sort</span><span class="nav__text">文章分類</span></a>
         <a href="#" class="nav__link"><span class="material-icons">notifications</span><span class="nav__text">通知</span></a>
         <a href="#" class="nav__link"><span class="material-icons">info</span><span class="nav__text">關於</span></a>
     </nav>
     <div class="main">
         <div class="earlyIntro">
-            <h1>網站正在建立中 ⋯⋯</h1>
-            <p> 看來你發現了這個神奇的地方！這個網站未來將充斥著我這資工人類平時不務正業的產出物，例如：<br> 攝影作品、不小心剪出來的影片、電子產品文章、資訊技術文章、旅行紀錄文章。
-                <br>一切還在籌備當中，感謝提前發現這裡的每個人！
+            <h1>歡迎：）</h1>
+            <p> 這裡是 Gene Chuang 的個人網頁，未來你可能會在這裡看到攝影作品、影片、旅遊紀錄文章、資訊產品文章，以及我的學習筆記。</p>
+            <p>歡迎你在以下平台找到我：<a href="https://www.youtube.com/channel/UC1BPf9TI4Fd32-lbEyOeQNw" target="_blank" rel="noopener noreferrer">YouTube</a>、<a href="https://www.instagram.com/genec.dev/" target="_blank" rel="noopener noreferrer">Instagram</a>。</ul>
             </p>
 
         </div>
-        <div class="socialAccounts">
-            <h1>社群帳號</h1>
-            <p><a href="https://www.youtube.com/channel/UC1BPf9TI4Fd32-lbEyOeQNw" target="_blank" rel="noopener noreferrer">YouTube (GMPP)</a>、<a href="https://www.instagram.com/genec.dev/" target="_blank" rel="noopener noreferrer">Instagram (@genec.dev)</a></ul>
-            </p>
-        </div>
         <div class="privacy">
             <h1>隱私權聲明</h1>
-            <p>此網站尚未使用任何分析工具，但當您透過搜尋引擎或其他社群平台造訪 genec.dev 時，該平臺有可能蒐集、分析您的資訊。</p>
+            <p>此網站尚未使用任何分析工具，但當您透過搜尋引擎或其他社群平台造訪本網頁時，該平臺有可能蒐集、分析您的資訊。</p>
         </div>
     </div>
 </body>
 <style>
      :root {
         --header-height: 50px;
+        --navbar-height: 70px;
+        --theme-light: #ffe29a;
+        --theme-background-light: #fff1cd;
+        --theme-text-light: #2b271a;
     }
     
     * {
@@ -53,12 +52,12 @@
     
     body {
         margin: 0px;
-        margin-top: calc(var(--header-height));
-        margin-bottom: 80px;
+        margin-top: var(--header-height);
+        margin-bottom: var(--navbar-height);
         padding: 0px;
         display: flex;
         justify-content: center;
-        background-color: #fff7e9;
+        background-color: var(--theme-background-light);
     }
     
     a {
@@ -68,7 +67,7 @@
     }
     
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.65rem;
         margin: 0px;
     }
     
@@ -77,8 +76,8 @@
     }
     
     .header {
-        color: rgb(84, 55, 0);
-        background-color: #ffeac6;
+        color: var(--theme-text-light);
+        background-color: var(--theme-light);
         text-align: center;
         position: fixed;
         top: 0;
@@ -96,13 +95,13 @@
     .nav--mobile {
         position: fixed;
         bottom: 0;
-        height: 80px;
+        height: var(--navbar-height);
         width: 100vw;
-        background-color: #ffeac6;
+        background-color: var(--theme-light);
         display: flex;
         /* justify-content: space-evenly; */
         overflow-x: auto;
-        color: rgb(105, 68, 0);
+        color: var(--theme-text-light);
         z-index: 10;
     }
     
@@ -113,12 +112,12 @@
         justify-content: center;
         flex-grow: 1;
         font-size: 12px;
-        transition: 0.2s;
+        transition: 0.4s;
         transition-timing-function: cubic-bezier(.14, .35, 0, 1);
     }
     
     .nav__link:active {
-        transition: 0.2s;
+        transition: 0.1s;
         transform: scale(.8);
     }
     
@@ -163,11 +162,23 @@
     }
     
     .main div {
-        border-radius: 30px;
-        background-color: #ffeac6;
-        color: rgb(105, 68, 0);
-        margin: 5px;
+        border-radius: 25px;
+        background-color: var(--theme-light);
+        color: var(--theme-text-light);
+        margin: 5px 5px 15px 5px;
         padding: 25px;
+        /* box-shadow: 0px 0px 10px #80808021; */
+    }
+    
+    .main div p {
+        font-family: 'Noto Sans Mono', monospace, 'Noto Serif TC', serif;
+        text-align: justify;
+        line-height: 2;
+    }
+    
+    .main div p a {
+        font-weight: bold;
+        text-decoration: underline;
     }
     
     .branding {
@@ -184,7 +195,7 @@
     const navButtons = document.querySelectorAll(".nav__link");
     navButtons.forEach((e) => {
         e.addEventListener("click", () => {
-            alert("底部 Navbar 還正在準備當中。")
+            //alert("底部 Navbar 還正在準備當中。")
         })
     })
 </script>
