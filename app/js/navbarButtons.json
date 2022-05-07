@@ -11,12 +11,12 @@
         "zh-Hant-TW": "文章類別"
     },
     "linkIcon": "sort",
-    "href": "category.html"
+    "href": "#"
 }, {
     "linkName": {
         "en-US": "About",
         "zh-Hant-TW": "關於"
     },
     "linkIcon": "info",
-    "href": "about.html"
+    "href": "#"
 }]
