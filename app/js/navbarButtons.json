@@ -1,0 +1,22 @@
+[{
+    "linkName": {
+        "en-US": "Home",
+        "zh-Hant-TW": "首頁"
+    },
+    "linkIcon": "home",
+    "href": "index.html"
+}, {
+    "linkName": {
+        "en-US": "Category",
+        "zh-Hant-TW": "文章類別"
+    },
+    "linkIcon": "sort",
+    "href": "category.html"
+}, {
+    "linkName": {
+        "en-US": "About",
+        "zh-Hant-TW": "關於"
+    },
+    "linkIcon": "info",
+    "href": "about.html"
+}]
