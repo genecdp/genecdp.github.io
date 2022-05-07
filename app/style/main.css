@@ -3,10 +3,8 @@
 }
 
 body {
-  margin: 0px;
   margin-top: 50px;
   margin-bottom: 70px;
-  padding: 0px;
   display: flex;
   justify-content: center;
   background-color: #fff0c9;
@@ -19,27 +17,26 @@ a {
 }
 
 .header {
-  color: rgba(0, 0, 0, 0.7647058824);
-  background-color: #eed9a4;
-  text-align: center;
-  font-family: "Noto Sans Mono", monospace;
+  color: rgba(26, 26, 26, 0.7647058824);
+  background-color: #f8e3ae;
+  font-family: "Noto Sans Mono", "monospace";
   position: fixed;
   top: 0;
   width: 100vw;
   height: 50px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
   z-index: 10;
 }
 
 .navbar {
   position: fixed;
-  bottom: 10px;
-  border-radius: 30px;
+  bottom: 0px;
   height: 70px;
-  width: 95vw;
-  background-color: #eed9a4;
+  width: 100vw;
+  background-color: #f8e3ae;
   display: flex;
   overflow-x: auto;
   color: #61563b;
@@ -59,10 +56,12 @@ a {
   transition: 0.05s;
   transform: scale(0.8);
 }
+.navbar .nav__link .nav__text {
+  margin-top: 4px;
+}
 
 .main {
   max-width: 767px;
-  padding: 10px;
   display: flex;
   flex-direction: column;
   transform: translateY(10px);
@@ -70,13 +69,15 @@ a {
   font-family: "Noto Sans TC", sans-serif;
 }
 .main .card {
-  border-radius: 25px;
-  background-color: #eed9a4;
-  color: rgba(0, 0, 0, 0.7647058824);
-  margin: 5px 5px 15px 5px;
-  padding: 25px;
+  border-radius: 15px;
+  background-color: #f8e3ae;
+  color: rgba(26, 26, 26, 0.7647058824);
+  margin: 15px;
+  margin-bottom: 0px;
+  padding: 20px;
 }
 .main .card h1 {
+  font-weight: bold;
   font-size: 1.65rem;
   margin: 0px;
 }
@@ -84,10 +85,9 @@ a {
   font-family: "Noto Sans Mono", monospace, "Noto Serif TC", serif;
   text-align: justify;
   line-height: 2;
-  margin: 5px;
+  margin-top: 8px;
 }
 .main .card p a {
-  font-weight: bold;
   text-decoration: underline;
 }
 .main.display {
@@ -95,6 +95,16 @@ a {
   transition-timing-function: cubic-bezier(0.14, 0.35, 0, 1);
   transform: translateY(0);
   opacity: 1;
+}
+.main footer {
+  display: flex;
+  justify-content: center;
+}
+.main footer .copyrightInfo {
+  margin: 15px;
+  font-size: 10px;
+  font-family: "Noto Sans Mono", "monospace";
+  color: rgba(26, 26, 26, 0.7647058824);
 }
 
 .material-icons {
