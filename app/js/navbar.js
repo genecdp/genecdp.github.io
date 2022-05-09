@@ -1,4 +1,5 @@
 const lang = "zh-Hant-TW";
+// const lang = "en-US";
 const navbar = document.querySelector(".navbar");
 fetch("app/js/navbarButtons.json")
     .then(function(response) {

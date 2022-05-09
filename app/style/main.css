@@ -88,13 +88,14 @@ a {
   margin: 0px;
 }
 .main .card p {
-  font-family: "Noto Sans Mono", monospace, "Noto Serif TC", serif;
+  font-family: "Noto Serif TC", serif;
   text-align: justify;
+  text-justify: inter-character;
   line-height: 2;
   margin-top: 8px;
 }
 .main .card p a {
-  text-decoration: underline;
+  font-weight: bold;
 }
 .main.display {
   transition: 0.4s;

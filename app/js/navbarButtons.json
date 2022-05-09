@@ -11,21 +11,14 @@
         "zh-Hant-TW": "文章"
     },
     "linkIcon": "article",
-    "href": "#articles"
-}, {
-    "linkName": {
-        "en-US": "Lab",
-        "zh-Hant-TW": "實驗"
-    },
-    "linkIcon": "code",
-    "href": "#code"
+    "href": "article.html"
 }, {
     "linkName": {
         "en-US": "About",
         "zh-Hant-TW": "關於"
     },
     "linkIcon": "account_circle",
-    "href": "#account"
+    "href": "about.html"
 }, {
     "linkName": {
         "en-US": "Settings",
