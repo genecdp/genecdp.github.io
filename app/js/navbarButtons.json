@@ -7,16 +7,30 @@
     "href": "index.html"
 }, {
     "linkName": {
-        "en-US": "Category",
-        "zh-Hant-TW": "文章類別"
+        "en-US": "Articles",
+        "zh-Hant-TW": "文章"
     },
-    "linkIcon": "sort",
-    "href": "#"
+    "linkIcon": "article",
+    "href": "#articles"
+}, {
+    "linkName": {
+        "en-US": "Lab",
+        "zh-Hant-TW": "實驗"
+    },
+    "linkIcon": "code",
+    "href": "#code"
 }, {
     "linkName": {
         "en-US": "About",
         "zh-Hant-TW": "關於"
     },
-    "linkIcon": "info",
-    "href": "#"
+    "linkIcon": "account_circle",
+    "href": "#account"
+}, {
+    "linkName": {
+        "en-US": "Settings",
+        "zh-Hant-TW": "設定"
+    },
+    "linkIcon": "settings",
+    "href": "#settings"
 }]
