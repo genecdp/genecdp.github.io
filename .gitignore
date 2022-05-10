@@ -1,3 +1,5 @@
 # .gitignore
 *.scss
 *.map
+*.cmd
+media
