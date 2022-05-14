@@ -8,10 +8,17 @@
 }, {
     "linkName": {
         "en-US": "Articles",
-        "zh-Hant-TW": "文章"
+        "zh-Hant-TW": "文章類別"
     },
     "linkIcon": "article",
     "href": "article.html"
+}, {
+    "linkName": {
+        "en-US": "Tools",
+        "zh-Hant-TW": "實驗功能"
+    },
+    "linkIcon": "code",
+    "href": "#tools"
 }, {
     "linkName": {
         "en-US": "About",

@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -17,15 +19,14 @@ a {
 }
 
 .header {
-  color: #412d02;
-  background-color: #f8e3ae;
-  font-family: "Noto Sans Mono", "monospace";
   position: fixed;
+  background-color: #f8e3ae;
+  color: #412d02;
+  height: 50px;
+  font-family: "Noto Sans Mono", "monospace";
   top: 0;
   width: 100vw;
-  height: 50px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   z-index: 10;
@@ -33,10 +34,10 @@ a {
 
 .navbar {
   position: fixed;
-  bottom: 0px;
-  height: 70px;
-  width: 100vw;
   background-color: #f8e3ae;
+  height: 70px;
+  bottom: 0px;
+  width: 100vw;
   display: flex;
   overflow-x: auto;
   color: #61563b;
@@ -48,7 +49,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-grow: 1;
+  width: 20%;
   font-size: 12px;
   transition: 0.4s;
   transition-timing-function: cubic-bezier(0.14, 0.35, 0, 1);
@@ -58,7 +59,7 @@ a {
   transform: scale(0.8);
 }
 .navbar .nav__link .nav__text {
-  margin-top: 4px;
+  margin-top: 5px;
 }
 .navbar.display {
   opacity: 1;
@@ -67,7 +68,7 @@ a {
 }
 
 .main {
-  width: calc(100vw - 20px);
+  width: 100%;
   max-width: 767px;
   display: flex;
   flex-direction: column;
@@ -79,7 +80,7 @@ a {
   border-radius: 15px;
   background-color: #f8e3ae;
   color: #412d02;
-  margin-top: 10px;
+  margin: 10px 10px 0px 10px;
   padding: 20px;
 }
 .main .card h1 {
