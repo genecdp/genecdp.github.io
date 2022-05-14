@@ -90,7 +90,6 @@ a {
 .main .card p {
   font-family: "Noto Serif TC", serif;
   text-align: justify;
-  text-justify: inter-character;
   line-height: 2;
   margin-top: 8px;
 }
